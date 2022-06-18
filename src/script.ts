@@ -23,7 +23,6 @@ console.log(person);
 // END - LESSON - 03
 
 // START - LESSON - 04
-
 let a: string;
 let b: number;
 
@@ -46,3 +45,13 @@ c = {
   name: "John",
   age: 30,
 };
+// END - LESSON - 04
+
+// START - LESSON - 05
+let any: any[] = [];
+
+let person2 = {
+  name: any,
+  age: any,
+}
+// END - LESSON - 05
