@@ -55,3 +55,11 @@ let person2 = {
   age: any,
 }
 // END - LESSON - 05
+
+// START - LESSON - 06
+const myFunc = (a: string, b: string, c: string = "Faysal", d?: string) => {
+  // console.log(`Hello ${a} ${b} ${c}`);
+  return a + b + c + d;
+}
+myFunc("John", "Doe");
+// END - LESSON - 06
