@@ -113,24 +113,30 @@ add = (x: number, y: number, z: string) => {
 // END - LESSON - 09
 
 // START - LESSON - 10
-class Player {
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string
-  ) {}
 
-  play() {
-    console.log(`${this.name} from ${this.country} is playing`);
-  }
-}
 
+// const Abu = new Player("Abu", 24, "Bangladesh");
+// const Saleh = new Player("Saleh", 24, "Bangladesh");
+// const faysal = new Player("Faysal", 24, "Bangladesh");
+
+// const players: Player[] = [];
+
+// console.log(faysal.age);
+// console.log(faysal.country);
+// END - LESSON - 10
+
+// START - LESSON - 11
+import { Player } from "./classes/Player.js";
 const Abu = new Player("Abu", 24, "Bangladesh");
 const Saleh = new Player("Saleh", 24, "Bangladesh");
 const faysal = new Player("Faysal", 24, "Bangladesh");
 
 const players: Player[] = [];
 
-// console.log(faysal.age);
-// console.log(faysal.country);
-// END - LESSON - 10
+console.log(faysal.age);
+console.log(faysal.country);
+// END - LESSON - 11
+
+
+
+
