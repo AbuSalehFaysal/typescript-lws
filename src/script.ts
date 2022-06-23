@@ -4,12 +4,12 @@
 const multiply = (a: number, b: number) => {
   return a * b;
 };
-console.log(multiply(4, 3));
+// console.log(multiply(4, 3));
 
 // array
 let fruits = ["apple", "banana", "cherry"];
 fruits.push("orange");
-console.log(fruits);
+// console.log(fruits);
 
 // object
 let person = {
@@ -18,7 +18,7 @@ let person = {
   isCaptain: true,
 };
 person.age = 40;
-console.log(person);
+// console.log(person);
 
 // END - LESSON - 03
 
@@ -63,3 +63,13 @@ const myFunc = (a: string, b: string, c: string = "Faysal", d?: string) => {
 }
 myFunc("John", "Doe");
 // END - LESSON - 06
+
+// START - LESSON - 07
+type stringOrNumber = string | number;
+type userType = {name: string, age: number};
+
+const userDetails = (id: stringOrNumber, user: userType) => {
+  console.log(`User id is ${id}, name is ${user.name}, age is ${user.age}`); 
+}
+// END - LESSON - 07
+

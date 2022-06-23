@@ -4,11 +4,11 @@
 const multiply = (a, b) => {
     return a * b;
 };
-console.log(multiply(4, 3));
+// console.log(multiply(4, 3));
 // array
 let fruits = ["apple", "banana", "cherry"];
 fruits.push("orange");
-console.log(fruits);
+// console.log(fruits);
 // object
 let person = {
     name: "John",
@@ -16,7 +16,7 @@ let person = {
     isCaptain: true,
 };
 person.age = 40;
-console.log(person);
+// console.log(person);
 // END - LESSON - 03
 // START - LESSON - 04
 let a;
@@ -48,4 +48,7 @@ const myFunc = (a, b, c = "Faysal", d) => {
     return a + b + c + d;
 };
 myFunc("John", "Doe");
-// END - LESSON - 06
+const userDetails = (id, user) => {
+    console.log(`User id is ${id}, name is ${user.name}, age is ${user.age}`);
+};
+// END - LESSON - 07
