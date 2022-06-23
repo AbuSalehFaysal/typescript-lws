@@ -57,5 +57,24 @@ let add;
 add = (x, y, z) => {
     return (z === "add") ? x + y : x - y;
 };
-console.log(add(5, 6, "add"));
+// console.log(add(5,6, "add"));
 // END - LESSON - 08
+// START - LESSON - 09
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+const Abu = new Player('Abu', 24, 'Bangladesh');
+const Saleh = new Player('Saleh', 24, 'Bangladesh');
+const faysal = new Player('Faysal', 24, 'Bangladesh');
+const players = [];
+players.push(Abu);
+players.push(Saleh);
+// console.log(faysal.name);
+// END - LESSON - 09
