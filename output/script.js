@@ -55,26 +55,47 @@ const userDetails = (id, user) => {
 // START - LESSON - 08
 let add;
 add = (x, y, z) => {
-    return (z === "add") ? x + y : x - y;
+    return z === "add" ? x + y : x - y;
 };
 // console.log(add(5,6, "add"));
 // END - LESSON - 08
 // START - LESSON - 09
+// class Player {
+//   name: string;
+//   age: number;
+//   country: string;
+//   constructor (n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.country = c;
+//   }
+//   play() {
+//     console.log(`${this.name} from ${this.country} is playing`);
+//   }
+// }
+// const Abu = new Player('Abu', 24, 'Bangladesh');
+// const Saleh = new Player('Saleh', 24, 'Bangladesh');
+// const faysal = new Player('Faysal', 24, 'Bangladesh');
+// const players: Player[] = [];
+// players.push(Abu);
+// players.push(Saleh);
+// console.log(faysal.name);
+// END - LESSON - 09
+// START - LESSON - 10
 class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
     play() {
         console.log(`${this.name} from ${this.country} is playing`);
     }
 }
-const Abu = new Player('Abu', 24, 'Bangladesh');
-const Saleh = new Player('Saleh', 24, 'Bangladesh');
-const faysal = new Player('Faysal', 24, 'Bangladesh');
+const Abu = new Player("Abu", 24, "Bangladesh");
+const Saleh = new Player("Saleh", 24, "Bangladesh");
+const faysal = new Player("Faysal", 24, "Bangladesh");
 const players = [];
-players.push(Abu);
-players.push(Saleh);
-// console.log(faysal.name);
-// END - LESSON - 09
+// console.log(faysal.age);
+// console.log(faysal.country);
+// END - LESSON - 10
