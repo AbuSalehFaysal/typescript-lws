@@ -52,3 +52,10 @@ const userDetails = (id, user) => {
     console.log(`User id is ${id}, name is ${user.name}, age is ${user.age}`);
 };
 // END - LESSON - 07
+// START - LESSON - 08
+let add;
+add = (x, y, z) => {
+    return (z === "add") ? x + y : x - y;
+};
+console.log(add(5, 6, "add"));
+// END - LESSON - 08

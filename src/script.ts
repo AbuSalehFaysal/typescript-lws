@@ -73,3 +73,13 @@ const userDetails = (id: stringOrNumber, user: userType) => {
 }
 // END - LESSON - 07
 
+// START - LESSON - 08
+let add: (x: number, y: number, z: string) => number;
+
+add = (x: number, y: number, z: string) => {
+  return (z === "add") ? x+y : x-y;
+}
+
+console.log(add(5,6, "add"));
+// END - LESSON - 08
+
