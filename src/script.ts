@@ -128,14 +128,38 @@ add = (x: number, y: number, z: string) => {
 // START - LESSON - 11
 import { Player } from "./classes/Player.js";
 const Abu = new Player("Abu", 24, "Bangladesh");
-const Saleh = new Player("Saleh", 24, "Bangladesh");
-const faysal = new Player("Faysal", 24, "Bangladesh");
+const Saleh = new Player("Saleh", 24, "Bangladesh"); 
+import { IsPlayer } from './interfaces/IsPlayer';
+let faysal: IsPlayer;
 
-const players: Player[] = [];
+const players: IsPlayer[] = [];
 
-console.log(faysal.age);
-console.log(faysal.country);
+// console.log(Saleh.age);
+// console.log(Saleh.country);
 // END - LESSON - 11
+
+// START - LESSON - 12
+interface RectangleInterface {
+  width: number;
+  length: number;
+}
+
+function drawRectangle(options: RectangleInterface) {
+  let width = options.width;
+  let length = options.length;
+  return width * length;
+}
+
+let threeDoptions = {
+  width: 10,
+  length: 20,
+}
+
+// console.log(drawRectangle(threeDoptions));
+
+
+
+// END - LESSON - 12
 
 
 

@@ -92,8 +92,16 @@ add = (x, y, z) => {
 import { Player } from "./classes/Player.js";
 const Abu = new Player("Abu", 24, "Bangladesh");
 const Saleh = new Player("Saleh", 24, "Bangladesh");
-const faysal = new Player("Faysal", 24, "Bangladesh");
+let faysal;
 const players = [];
-console.log(faysal.age);
-console.log(faysal.country);
-// END - LESSON - 11
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+    return width * length;
+}
+let threeDoptions = {
+    width: 10,
+    length: 20,
+};
+// console.log(drawRectangle(threeDoptions));
+// END - LESSON - 12
