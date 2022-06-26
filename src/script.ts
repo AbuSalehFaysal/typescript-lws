@@ -156,11 +156,42 @@ let threeDoptions = {
 }
 
 // console.log(drawRectangle(threeDoptions));
-
-
-
 // END - LESSON - 12
 
+// START - LESSON - 13
 
+// Generics
+const addId = <T extends {
+  name: string,
+  age: number,
+}>(obj: T) => {
+  let id = Math.floor(Math.random()*100);
+  return {...obj, id};
+}
 
+let user = addId({
+  name: "Faysal",
+  age: 25,
+  country: "Bangladesh"
+});
 
+// let user = "Faysal";
+
+addId(user);
+
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const response: APIResponse<object> = {
+  status: 200,
+  type: "good",
+  data: {
+    name: "Test",
+    someThing: 300
+  }
+}
+
+// END - LESSON - 13
