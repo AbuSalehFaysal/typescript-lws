@@ -105,3 +105,49 @@ let threeDoptions = {
 };
 // console.log(drawRectangle(threeDoptions));
 // END - LESSON - 12
+// START - LESSON - 13
+// Generics
+const addId = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addId({
+    name: "Faysal",
+    age: 25,
+    country: "Bangladesh"
+});
+// let user = "Faysal";
+addId(user);
+// interface APIResponse<T> {
+//   status: number;
+//   type: number;
+//   data: T;
+// }
+// const response: APIResponse<object> = {
+//   status: 200,
+//   type: 1,
+//   data: {
+//     name: "Test",
+//     someThing: 300
+//   }
+// }
+// END - LESSON - 13
+// START - LESSON - 14
+// ENUM Types
+var ResponseType;
+(function (ResponseType) {
+    ResponseType[ResponseType["SUCCESS"] = 0] = "SUCCESS";
+    ResponseType[ResponseType["FAILURE"] = 1] = "FAILURE";
+    ResponseType[ResponseType["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    ResponseType[ResponseType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(ResponseType || (ResponseType = {}));
+const response = {
+    status: 200,
+    type: ResponseType.SUCCESS,
+    data: {
+        name: "Test",
+        someThing: 300
+    }
+};
+// console.log(response);
+// END - LESSON - 14

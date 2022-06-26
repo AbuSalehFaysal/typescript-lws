@@ -179,19 +179,43 @@ let user = addId({
 
 addId(user);
 
+
+// interface APIResponse<T> {
+//   status: number;
+//   type: number;
+//   data: T;
+// }
+
+// const response: APIResponse<object> = {
+//   status: 200,
+//   type: 1,
+//   data: {
+//     name: "Test",
+//     someThing: 300
+//   }
+// }
+
+// END - LESSON - 13
+
+// START - LESSON - 14
+
+// ENUM Types
+enum ResponseType {SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN}
 interface APIResponse<T> {
   status: number;
-  type: string;
+  type: ResponseType;
   data: T;
 }
 
 const response: APIResponse<object> = {
   status: 200,
-  type: "good",
+  type: ResponseType.SUCCESS,
   data: {
     name: "Test",
     someThing: 300
   }
 }
 
-// END - LESSON - 13
+// console.log(response);
+
+// END - LESSON - 14
